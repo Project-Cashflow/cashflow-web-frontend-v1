@@ -1,0 +1,126 @@
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 1920px;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.logo-title {
+    margin-top: 169px;
+}
+
+.logo {
+    color: #034AB5;
+    font-family: 'Montserrat-Black';
+  
+    font-size: 55px;
+}
+
+p {
+    margin-top:5px;
+   font-size:18px;
+    color: #4575BC;
+    font-family: 'Montserrat-Medium';
+}
+
+.contentWrap {
+    margin-top: 80px;
+    color: #034AB5;
+    font-family: 'Montserrat-Medium';
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가로 가운데 정렬 */
+    text-align: center; /* 텍스트를 수직 가운데 정렬 */
+}
+
+.loginStay {
+    margin-top: 18px;
+    display: flex; /* 수직 정렬을 위해 flexbox 사용 */
+    cursor: pointer;
+}
+
+.loginStay img {
+    width: 20px; /* 가로 크기 20px */
+    height: 20px; /* 세로 크기 20px */
+    margin-right: 3px; /* 이미지와 텍스트 사이 간격 조절 */
+}
+
+.loginStay span {
+    font-size: 18px;
+    color: #4575BC;
+    font-family: 'Montserrat-Medium';
+    
+}
+
+
+.inputWrap{
+    display:flex;
+    background-color: #F3F5F6;
+    border-radius: 5px;
+    padding:18px;
+   
+    width:444px;
+    margin-top:18px;
+
+    border: none;
+    box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
+
+   
+}
+.inputWrap:focus-within{
+    border:1.5px solid #034AB5;
+}
+
+input {
+    
+    padding-left: 10px;
+    width:100%;
+    height: 20px;
+    font-size: 19px;
+    background-color: #F3F5F6;
+    border:none;
+    outline:none;
+  
+    
+}
+input::placeholder {
+    color: #034AB5;
+    font-family: 'Montserrat-Medium';
+}
+
+.loginBtn {
+    width: 444px;
+    background-color: #034AB5;
+    margin-top:42px;
+    height:78px;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    font-size:25px;
+    font-family: 'Montserrat-Black';
+
+}
+.loginBtn:disabled{
+    background-color: #dadada;
+    color:white;
+}
+
+.login-help{
+    margin-top:42px;
+    color:#4575BC;
+}
+
+.login-help a{
+    text-decoration: none;
+    color: #034AB5;
+    font-family: 'Montserrat-Medium';
+}
