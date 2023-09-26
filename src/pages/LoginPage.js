@@ -18,12 +18,13 @@ const LoginPage = () => {
     const [notallow,setNotAllow]=useState(true);
     const [isClicked,setIsClicked]=useState(false);
     
-    const navigate =useNavigate(0);
+  
     //아이디에 입력확인 및 우선 기본으로 이메일 형식으로 넣게 규칙 설정
     const handleEmail = (e) => {
         setEmail(e.target.value)
         const regex =
-            /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+        /^(([^<>()[]\.,;:\s@"]+(\.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([^<>()\.,;:\s@"]+\.)+[^<>()\.,;:\s@"]{2,})$/i;
+      
         
             if (regex.test(e.target.value)) {
                 setEmailValid(true);
@@ -37,7 +38,8 @@ const LoginPage = () => {
     const handlePw = (e) => {
         setPw(e.target.value)
         const regex =
-            /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/;
+        /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\(\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\(\)\-_=+]).{8,20}$/;
+      
             if (regex.test(e.target.value)) {
                 setPwValid(true);
         }
@@ -58,7 +60,7 @@ const LoginPage = () => {
 
        //회원정보 일치 확인
         const confirmBtn=()=>{
-            if(email==User.email&&pw==User.pw){
+            if(email===User.email&&pw===User.pw){
                 alert("로그인에 성공하셨습니다!")
 
             }

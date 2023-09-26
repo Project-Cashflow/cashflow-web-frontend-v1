@@ -1,5 +1,5 @@
 import LoginPage from './pages/LoginPage';
-import { Route, Routes, Router} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import './App.css';
 
 function App() {
