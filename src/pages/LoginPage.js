@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/LoginPage.css";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
 import React from "react";
 
 const User={
@@ -21,32 +21,30 @@ const LoginPage = () => {
   
     //아이디에 입력확인 및 우선 기본으로 이메일 형식으로 넣게 규칙 설정
     const handleEmail = (e) => {
-        setEmail(e.target.value)
-        const regex =
-        /^(([^<>()[]\.,;:\s@"]+(\.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([^<>()\.,;:\s@"]+\.)+[^<>()\.,;:\s@"]{2,})$/i;
+        setEmail(e.target.value);
+        const regexEmail = /^(([^<>()[].,;:\s@"]+(\.[^<>()[].,;:\s@"]+)*)|(".+"))@(([^<>().,;:\s@"]+\.)+[^<>().,;:\s@"]{2,})$/i;
       
-        
-            if (regex.test(e.target.value)) {
-                setEmailValid(true);
+        if (regexEmail.test(e.target.value)) {
+          setEmailValid(true);
+        } else {
+          setEmailValid(false);
         }
-        else{
-            setEmailValid(false);
-        }
-    }
-
-//비밀번호는 영문,특수문자,숫자 합쳐서 8자이상으로 함
-    const handlePw = (e) => {
-        setPw(e.target.value)
-        const regex =
-        /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\(\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\(\)\-_=+]).{8,20}$/;
+      };
       
-            if (regex.test(e.target.value)) {
-                setPwValid(true);
-        }
-        else{
+      const handlePw = (e) => {
+        setPw(e.target.value);
+        const regexPassword = /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&()\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&()\-_=+]).{8,20}$/;
+      
+        if (regexPassword.test(e.target.value)) {
+            setPwValid(true);
+          } else {
             setPwValid(false);
-        }
-        }
+          }
+      };
+      
+     
+      
+      
 
 //아이디,비번 다 규칙에 맞아야 버튼 활성화
         useEffect(()=>{
