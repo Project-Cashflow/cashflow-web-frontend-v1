@@ -1,5 +1,5 @@
 .container {
-    position: absolute;
+    
     top: 0;
     bottom: 0;
     width: 100%;
@@ -10,9 +10,11 @@
     
 
     display: flex;
+    position: relative;
 
     flex-direction: column;
 }
+
 
 .logo-title {
     margin-top: 169px;
@@ -21,21 +23,28 @@
 .logo {
     color: #034AB5;
     font-family: 'Montserrat-Black';
-  
     font-size: 55px;
 }
 
-p {
-    margin-top:5px;
-   font-size:18px;
+.logo-exp {
+    margin-top: 5px;
+    font-size: 18px;
     color: #4575BC;
-    font-family: 'Montserrat-Medium';
+    font-family: 'NotoSans-Medium';
 }
 
+.wrongData {
+    position: absolute; /* 절대 위치 설정 */
+    margin-top:-5px;
+    margin-left:50px;
+    transform: translateX(-50%); /* 수평 정렬 */
+    color: #C24A4A;
+    font-family: "NotoSans-Regular";
+  }
 .contentWrap {
     margin-top: 80px;
-    color: #034AB5;
-    font-family: 'Montserrat-Medium';
+   
+    font-family: 'NotoSans-Regular';
     display: flex;
     flex-direction: column;
     align-items: center; /* 가로 가운데 정렬 */
@@ -57,11 +66,14 @@ p {
 .loginStay span {
     font-size: 18px;
     color: #4575BC;
-    font-family: 'Montserrat-Medium';
+    font-family: 'NotoSans-Regular';
     
 }
 
-
+.wrongData{
+    color:#C24A4A;
+    font-family: 'NotoSans-Regular';
+}
 .inputWrap{
     display:flex;
     background-color: #F3F5F6;
@@ -94,7 +106,7 @@ input {
 }
 input::placeholder {
     color: #034AB5;
-    font-family: 'Montserrat-Medium';
+    font-family: 'NotoSans-Regular';
 }
 
 .loginBtn {
@@ -106,7 +118,7 @@ input::placeholder {
     border-radius: 5px;
     border:none;
     font-size:25px;
-    font-family: 'Montserrat-Black';
+    font-family: 'NotoSans-Bold';
 
 }
 .loginBtn:disabled{
@@ -122,5 +134,5 @@ input::placeholder {
 .login-help a{
     text-decoration: none;
     color: #034AB5;
-    font-family: 'Montserrat-Medium';
+    font-family: 'NotoSans-Regular';
 }
