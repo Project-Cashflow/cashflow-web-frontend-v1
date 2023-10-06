@@ -1,13 +1,13 @@
 
 import "../styles/SignUp.css";
-import { useState } from "react";
-import { useEffect } from "react";
-import React from "react";
+/*import { useState } from "react";
+
+import React from "react";*/
 
 
 
 const SignUp = () => {
-    const [email,setEmail]=useState("");
+    /*const [email,setEmail]=useState("");
     const [pw, setPw] = useState("");
     const [emailVaild, setEmailValid]=useState(false);
     const [pwVaild, setPwValid]=useState(false);
@@ -77,6 +77,6 @@ const SignUp = () => {
 
             
         </div>
-    )
+    )*/
 }
 export default SignUp;
