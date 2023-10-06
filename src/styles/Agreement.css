@@ -1,0 +1,110 @@
+.container {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 1920px;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+
+
+    display: flex;
+    position: relative;
+    
+    
+    flex-direction: column;
+}
+.titleWrap{
+    margin-top: 174px;
+    display: flex;
+     
+    justify-content: center; 
+
+}
+.title{
+    color: #034AB5;
+    font-family: 'Montserrat-Black';
+    font-size: 43px;
+    margin-top:7px;
+    
+    
+}
+.title2{
+    color:#6F9DE3;
+    font-family: 'NotoSans-Black';
+    font-size: 22px;
+    margin-left:3px;
+  
+}
+.contentsWrap{
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.itemWrap{
+    margin-top:13px;
+   
+     
+    
+}
+.agree-title{
+    color:#034AB5;
+    font-family: 'NotoSans-Medium';
+    margin-right:250px;
+    font-size: 16px;
+
+}
+.expWrap{
+    
+    color:#A1A1A1;
+    font-size:14px;
+    background-color: #F3F5F6;
+    border-radius: 5px;
+    padding:15px;
+    
+    width:444px;
+    margin-top:8px;
+
+    border: none;
+    box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
+    max-height: 107px; /* 원하는 높이 설정 */
+    overflow-y: auto;
+    text-align: left;
+    
+   
+}
+.agreeCheck{
+    margin-top:9px;
+    text-align: right;
+   
+}
+
+.agreeCheck img {
+    width: 20px; /* 가로 크기 20px */
+    height: 20px; /* 세로 크기 20px */
+    margin-right:6px;
+    vertical-align: middle; 
+    margin-bottom: 3px;
+    
+}
+.nextBtn{
+    margin-top: 13px;
+    width: 444px;
+    background-color: #034AB5;
+   
+    height:78px;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    font-size:25px;
+    font-family: 'NotoSans-Bold';
+}
+.nextBtn:disabled{
+    background-color: #dadada;
+    color:white;
+}
+.login-help{
+    margin-top: 26px;
+}
