@@ -79,7 +79,7 @@
     background-color: #F3F5F6;
     border-radius: 5px;
     padding:18px;
-   
+
     width:444px;
     margin-top:18px;
 
@@ -89,7 +89,7 @@
    
 }
 .inputWrap:focus-within{
-    border:1.5px solid #034AB5;
+    box-shadow: 0 0 0 1.5px #034AB5;
 }
 
 input {
