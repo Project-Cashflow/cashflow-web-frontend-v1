@@ -13,7 +13,7 @@ const SignUp = () => {
     const [pw, setPw] = useState("");
     const [pwValid, setPwValid] = useState(false);
     const [pwMatch, setPwMatch] = useState(false);
-    const [pwError, setPwError] = useState(false);
+   
     const [hasLetter, setHasLetter] = useState(false);
     const [hasNumber, setHasNumber] = useState(false);
     const [hasSpecial, setHasSpecial] = useState(false);
@@ -57,7 +57,7 @@ const SignUp = () => {
 
     const handlePw = (e) => {
         setPw(e.target.value);
-        setPwError(false);
+        
         const regexPassword = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&()\-_=+]).{8,20}$/;
         const hasLetterRegex = /[a-zA-Z]/;
         const hasNumberRegex = /\d/;
