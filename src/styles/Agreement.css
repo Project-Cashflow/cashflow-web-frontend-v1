@@ -52,15 +52,17 @@
 .agree-title{
     color:#034AB5;
     font-family: 'NotoSans-Medium';
-    margin-right:250px;
+    margin-right:275px;
     font-size: 16px;
 
 }
 .expWrap{
     
-    color:#A1A1A1;
+    color:#787878;
     font-size:14px;
     background-color: #F3F5F6;
+    font-family: 'NotoSans-Regular';
+
     border-radius: 5px;
     padding:15px;
     
@@ -78,6 +80,8 @@
 .agreeCheck{
     margin-top:9px;
     text-align: right;
+    font-family: 'NotoSans-Regular';
+
    
 }
 
@@ -91,7 +95,7 @@
 }
 .nextBtn{
     margin-top: 13px;
-    width: 444px;
+    width: 476px;
     background-color: #034AB5;
    
     height:78px;
@@ -107,4 +111,9 @@
 }
 .login-help{
     margin-top: 26px;
+
+}
+.login-help a{
+    font-family: 'NotoSans-Regular';
+
 }

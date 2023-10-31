@@ -42,7 +42,7 @@ const Agreement=()=>{
 비슷할 것이란 생각들도 갖고 있었어요. 물론 자동차 보험회사가 얼마나...먼저 많은 분들이 갖고 계신 생각등 그부분부터 공유해 보고자 합니다. 제 지인들에게 정말 들어본 내용입니다. 먼저 본인의 보험회사를 이어 갱신하면 유리한 비용인줄 알았단 내용 및 보험회사 전반적인 요금등
 비슷할 것이란 생각들도 갖고 있었어요. 물론 자동차 보험회사가 얼마나...</div>
             <div className="agreeCheck"style={{ color: isClicked? '#034AB5':'#AAAAAA',fontWeight:isClicked?'bold':'normal'}} onClick={handleClick}>
-                    약관 1에 동의{isClicked?<img src="/assets/img/checkChange.png" alt="check" />:<img src="/assets/img/check2.png" alt="check" />}</div>
+                    약관 1에 동의 {isClicked?<img src="/assets/img/check3.png" alt="check" />:<img src="/assets/img/check2.png" alt="check" />}</div>
         </div>
 
         <div className="itemWrap">
@@ -51,7 +51,7 @@ const Agreement=()=>{
 비슷할 것이란 생각들도 갖고 있었어요. 물론 자동차 보험회사가 얼마나...먼저 많은 분들이 갖고 계신 생각등 그부분부터 공유해 보고자 합니다. 제 지인들에게 정말 들어본 내용입니다. 먼저 본인의 보험회사를 이어 갱신하면 유리한 비용인줄 알았단 내용 및 보험회사 전반적인 요금등
 비슷할 것이란 생각들도 갖고 있었어요. 물론 자동차 보험회사가 얼마나...</div>
             <div className="agreeCheck"style={{ color: isClicked2? '#034AB5':'#AAAAAA',fontWeight:isClicked2?'bold':'normal'}} onClick={handleClick2}>
-                    약관 2에 동의{isClicked2?<img src="/assets/img/checkChange.png" alt="check" />:<img src="/assets/img/check2.png" alt="check" />}</div>
+                    약관 2에 동의 {isClicked2?<img src="/assets/img/check3.png" alt="check" />:<img src="/assets/img/check2.png" alt="check" />}</div>
         </div>
         
 
