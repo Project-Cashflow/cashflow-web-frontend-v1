@@ -55,18 +55,20 @@
     margin-top: 18px;
     display: flex; /* 수직 정렬을 위해 flexbox 사용 */
     cursor: pointer;
+    font-family: 'NotoSans-Regular';
 }
 
 .loginStay img {
-    width: 20px; /* 가로 크기 20px */
-    height: 20px; /* 세로 크기 20px */
-    margin-right: 3px; /* 이미지와 텍스트 사이 간격 조절 */
+    width: 17px; /* 가로 크기 20px */
+    height: 17px; /* 세로 크기 20px */
+    margin-right: 5px; /* 이미지와 텍스트 사이 간격 조절 */
+    margin-top: 3px;
 }
 
 .loginStay span {
     font-size: 18px;
     color: #4575BC;
-    font-family: 'NotoSans-Regular';
+    
     
 }
 
@@ -80,7 +82,7 @@
     border-radius: 5px;
     padding:18px;
 
-    width:444px;
+    width:424px;
     margin-top:18px;
 
     border: none;
@@ -110,7 +112,7 @@ input::placeholder {
 }
 
 .loginBtn {
-    width: 444px;
+    width: 460px;
     background-color: #034AB5;
     margin-top:42px;
     height:78px;

@@ -13,7 +13,7 @@ const SignUp = () => {
     const [pw, setPw] = useState("");
     const [pwValid, setPwValid] = useState(false);
     const [pwMatch, setPwMatch] = useState(false);
-   
+
     const [hasLetter, setHasLetter] = useState(false);
     const [hasNumber, setHasNumber] = useState(false);
     const [hasSpecial, setHasSpecial] = useState(false);
@@ -34,6 +34,7 @@ const SignUp = () => {
             setEmailValid(false);
         }
     };
+   
 
     const handleEmailClick = () => {
         if (emailValid && !isEmailClicked) {
@@ -41,8 +42,14 @@ const SignUp = () => {
         }
     };
 
+    const handleVerificationCode = (e) => {
+        setVerificationCode(e.target.value);
+        
+    };
+
     const handleVerificationClick = () => {
         if (verificationCode !== emailCode) {
+            
             setVerificationError(true);
         } else {
             setVerificationError(false);
@@ -51,10 +58,7 @@ const SignUp = () => {
         }
     };
 
-    const handleVerificationCode = (e) => {
-        setVerificationCode(e.target.value);
-    };
-
+ 
     const handlePw = (e) => {
         setPw(e.target.value);
         
@@ -105,9 +109,9 @@ const SignUp = () => {
                     </div>
                     <div className="imgbtn" onClick={handleEmailClick}>
                         {isEmailClicked ? (
-                            <img src="/assets/img/sentEmail.png" alt="check" />
+                            <img src="/assets/img/airplane.png" alt="check" style={{width:"52px",height:"52px"}}/>
                         ) : (
-                            <img src={emailValid ? "/assets/img/email.png" : "/assets/img/sentemail.png"} alt="check" style={{ marginLeft: "-5px" }} />
+                            <img src={emailValid ? "/assets/img/email.png" : "/assets/img/airplane.png"} alt="check" style={{ marginLeft: "-5px"}} />
                         )}
                     </div>
                 </div>
@@ -115,23 +119,24 @@ const SignUp = () => {
                     <div
                         className="exp"
                         style={{
-                            marginRight: verificationError ? "260px" : "185px",
+                            marginRight: verificationError ? "260px" : "270px",
                             marginTop: "3px",
-                            color: verificationError ? "red" : "#034AB5"
+                            color: verificationError ? "#C44B4B" : "#4B7CC4",
+                            fontFamily:"NotoSans-Regular"
                         }}
                     >
                         {verificationError
                             ? "인증번호가 일치하지 않습니다."
-                            : "이메일로 전송된 인증번호를 입력해주세요"}
+                            : "이메일 인증번호를 입력하세요."}
                     </div>
                 )}
                 <div className="border1">
-                    <div className="inputwrapshort" style={{ marginLeft: "17px" }}>
-                        <input type="text" placeholder="이메일 인증번호" value={verificationCode} onChange={handleVerificationCode} />
+                    <div className="inputwrapshort" style={{ marginLeft: "13px" }}>
+                        <input type="text" placeholder="이메일 인증번호" value={verificationCode} onChange={handleVerificationCode} style={{ color: verificationError ? "#C44B4B" : "#034AB5"}}/>
                     </div>
                     <div className="imgbtn" onClick={handleVerificationClick}>
                         {verificationError ? (
-                            <img src="/assets/img/emailCheck.png" alt="check" />
+                            <img src="/assets/img/emailCheck.png" alt="check" style={{marginLeft:"-2px"}}/>
                         ) : (
                             <img src={verificationCode === emailCode ? "/assets/img/emailCheckCpl.png" : "/assets/img/emailCheck.png"} alt="check" />
                         )}
@@ -139,9 +144,9 @@ const SignUp = () => {
                 </div>
 
 
-                <div className="exp" style={{ marginLeft: `${25 + (hasLetter + hasNumber + hasSpecial + hasValidLength) * 20}px`, marginTop: "3px" }}>
+                <div className="exp" style={{ marginLeft: `${14 + (hasLetter + hasNumber + hasSpecial + hasValidLength) * 20}px`, marginTop: "3px" }}>
                     {hasLetter ? (
-                        <div >
+                        <div className="expS" >
                             <span>영문</span>
                             <img className="imgCheck" src="/assets/img/miniCheck.png" alt="check" />
                         </div>
@@ -149,7 +154,7 @@ const SignUp = () => {
                         <span style={{ marginRight: "15px" }}>영문</span>
                     )}
                     {hasNumber ? (
-                        <div >
+                        <div className="expS">
                             <span>숫자</span>
                             <img className="imgCheck" src="/assets/img/miniCheck.png" alt="check" />
                         </div>
@@ -157,7 +162,7 @@ const SignUp = () => {
                         <span style={{ marginRight: "15px" }}>숫자</span>
                     )}
                     {hasSpecial ? (
-                        <div >
+                        <div className="expS">
                             <span>특수문자</span>
                             <img className="imgCheck" src="/assets/img/miniCheck.png" alt="check" />
                         </div>
@@ -165,7 +170,7 @@ const SignUp = () => {
                         <span style={{ marginRight: "15px" }}>특수문자</span>
                     )}
                     {hasValidLength ? (
-                        <div >
+                        <div className="expS">
                             <span>8자 이상 20자 이하</span>
                             <img className="imgCheck" src="/assets/img/miniCheck.png" alt="check" />
                         </div>
@@ -189,8 +194,8 @@ const SignUp = () => {
                         alt="hidePw"
                     />
                 </div>
-                <div className="exp" style={{ marginRight: pwMatch ? "330px" : "360px" }}>
-                    {pwMatch ? "비밀번호 일치" : "비밀번호 일치  "}
+                <div className="exp" style={{ marginRight: pwMatch ? "335px" : "368px" }}>
+                    {pwMatch ? <span>비밀번호 일치</span> : <span>비밀번호 일치  </span>}
                     {pwMatch && <img className="imgCheck" src="/assets/img/miniCheck.png" alt="check" />}
                 </div>
 
@@ -210,7 +215,7 @@ const SignUp = () => {
                     />
                 </div>
 
-                <div className="exp" style={{ marginRight: "395px" }}>선택사항</div>
+                <div className="exp" style={{ marginRight: "400px" }}><span>선택사항</span></div>
                 <div className="border1">
                     <div className="inputwraps">
                         <input type="text" placeholder="텔레그램 가입 전화번호"></input>

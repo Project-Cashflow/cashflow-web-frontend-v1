@@ -103,7 +103,7 @@ const LoginPage = () => {
                 </div>
 
                 <div className="loginStay" style={{ marginRight: "310px",color: isClicked? '#034AB5':'#AAAAAA',fontWeight:isClicked?'bold':'normal'}} onClick={handleClick}>
-                    {isClicked?<img src="/assets/img/checkChange.png" alt="check" />:<img src="/assets/img/check2.png" alt="check" />}로그인 상태유지</div>
+                    {isClicked?<img src="/assets/img/check3.png" alt="check" />:<img src="/assets/img/check2.png" alt="check" />}로그인 상태유지</div>
                     
 
 
@@ -111,10 +111,11 @@ const LoginPage = () => {
 
             <div>
                 <button className="loginBtn" disabled={notallow} onClick={confirmBtn}>로그인</button>
+                
             </div>
 
             <div className="login-help">
-                <a href="/">비밀번호 찾기</a> | <a href="/">회원가입</a>
+                <a href="/">비밀번호 찾기</a> | <a href="/signup">회원가입</a>
             </div>
 
         </div>
