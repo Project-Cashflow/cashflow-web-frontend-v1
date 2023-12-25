@@ -10,110 +10,125 @@
 
     display: flex;
     position: relative;
-    
-    
+
+
     flex-direction: column;
 }
-.titleWrap{
+
+.titleWrap {
     margin-top: 174px;
     display: flex;
-     
-    justify-content: center; 
+
+    justify-content: center;
 
 }
-.title{
+
+.title {
     color: #034AB5;
     font-family: 'Montserrat-Black';
     font-size: 48px;
-    margin-top:7px;
-    
-    
+    margin-top: 7px;
+
+
 }
-.title2{
-    color:#6F9DE3;
+
+.title2 {
+    color: #6F9DE3;
     font-family: 'NotoSans-Black';
     font-size: 25px;
-    margin-left:3px;
-  
+    margin-left: 3px;
+
 }
-.contentsWrap{
+
+.contentsWrap {
     margin-top: 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.itemWrap{
-    margin-top:13px;
-   
-     
-    
+
+.itemWrap {
+    margin-top: 13px;
+
+
+
 }
-.agree-title{
-    color:#034AB5;
+
+.agree-title {
+    color: #034AB5;
     font-family: 'NotoSans-Medium';
-    margin-right:275px;
+    margin-right: 275px;
     font-size: 16px;
 
 }
-.expWrap{
-    
-    color:#787878;
-    font-size:14px;
+
+.expWrap {
+
+    color: #787878;
+    font-size: 14px;
     background-color: #F3F5F6;
     font-family: 'NotoSans-Regular';
 
     border-radius: 5px;
-    padding:15px;
-    
-    width:444px;
-    margin-top:8px;
+    padding: 15px;
+
+    width: 444px;
+    margin-top: 8px;
 
     border: none;
     box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
-    max-height: 107px; /* 원하는 높이 설정 */
+    max-height: 107px;
+    /* 원하는 높이 설정 */
     overflow-y: auto;
     text-align: left;
-    
-   
+
+
 }
-.agreeCheck{
-    margin-top:9px;
+
+.agreeCheck {
+    margin-top: 9px;
     text-align: right;
     font-family: 'NotoSans-Regular';
 
-   
+
 }
 
 .agreeCheck img {
-    width: 20px; /* 가로 크기 20px */
-    height: 20px; /* 세로 크기 20px */
-    margin-right:6px;
-    vertical-align: middle; 
+    width: 20px;
+    /* 가로 크기 20px */
+    height: 20px;
+    /* 세로 크기 20px */
+    margin-right: 6px;
+    vertical-align: middle;
     margin-bottom: 3px;
-    
+
 }
-.nextBtn{
+
+.nextBtn {
     margin-top: 13px;
     width: 476px;
     background-color: #034AB5;
-   
-    height:78px;
-    color:white;
+
+    height: 78px;
+    color: white;
     border-radius: 5px;
-    border:none;
-    font-size:25px;
+    border: none;
+    font-size: 25px;
     font-family: 'NotoSans-Bold';
 }
-.nextBtn:disabled{
+
+.nextBtn:disabled {
     background-color: #dadada;
-    color:white;
+    color: white;
 }
-.login-help{
+
+.login-help {
     margin-top: 26px;
 
 }
-.login-help a{
+
+.login-help a {
     font-family: 'NotoSans-Regular';
 
 }

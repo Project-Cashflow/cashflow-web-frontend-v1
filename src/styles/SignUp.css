@@ -1,170 +1,195 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     justify-content: center;
 }
-.titleWrap{
+
+.titleWrap {
     margin-top: 174px;
     display: flex;
-     
-    justify-content: center; 
+
+    justify-content: center;
 
 }
-.title{
+
+.title {
     color: #034AB5;
     font-family: 'Montserrat-Black';
     font-size: 48px;
-    margin-top:7px;
-    
-    
+    margin-top: 7px;
+
+
 }
-.title2{
-    color:#6F9DE3;
+
+.title2 {
+    color: #6F9DE3;
     font-family: 'NotoSans-Black';
     font-size: 25px;
-    margin-left:3px;
-  
+    margin-left: 3px;
+
 }
-.contextWrap{
+
+.contextWrap {
     margin-top: 10px;
-    display: flex; /* 추가된 부분 */
-    flex-direction: column; /* 추가된 부분 */
-    align-items: center; /* 추가된 부분 */
-    text-align: center; 
+    display: flex;
+    /* 추가된 부분 */
+    flex-direction: column;
+    /* 추가된 부분 */
+    align-items: center;
+    /* 추가된 부분 */
+    text-align: center;
 
 
-   
+
 }
+
+.error {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
 /*각 입력창 위의 글자*/
-.exp{
-    display: flex; /* 수정된 부분 */
+.exp {
+    display: flex;
     margin-top: 8px;
     margin-right: 200px;
     color: #034AB5;
     font-family: 'NotoSans-Medium';
     font-size: 14px;
-    align-items: center; 
+    align-items: center;
+
 }
-.exp span{
-    color:#4B7CC4;
+
+.exp span {
+    color: #4B7CC4;
     font-family: 'NotoSans-Regular';
 
 }
-.expS{
+
+.expS {
     display: flex;
-    align-items: center; 
+    align-items: center;
 
 
 }
+
 /* 비번 조건 체크 이미지 */
-.imgCheck{
+.imgCheck {
     width: 20px;
     height: 17px;
-    margin-right: 10px; /* 이미지 사이의 간격을 조정하기 위해 추가한 부분 */
+    margin-right: 10px;
+    /* 이미지 사이의 간격을 조정하기 위해 추가한 부분 */
 }
 
 /* 입력창 */
-.inputwraps{
+.inputwraps {
     margin-top: 8px;
     background-color: #F3F5F6;
     border-radius: 5px;
-    padding:15px;
-   
-    width:448px;
-   margin-left: 5px;
+    padding: 15px;
+
+    width: 448px;
+    margin-left: 5px;
     display: flex;
     align-items: center;
     border: none;
     box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
-position: relative;
-   
+    position: relative;
+
 }
-.inputwraps:focus-within{
+
+.inputwraps:focus-within {
     box-shadow: 0 0 0 1.5px #034AB5;
 }
+
 /* 칸 안에 있는 이미지 */
-.imgIn{
+.imgIn {
     position: absolute;
-    margin-left: 420px;
-    margin-top:10px;
-    width:45px;
-    height:45px;
+    margin-left: 437px;
+    margin-top: 10px;
+    width: 26px;
+    height: 26px;
 
 
 }
+
 /* 짧은 입력창 */
-.inputwrapshort{
-   margin-left: 4px;
-    display:flex;
+.inputwrapshort {
+
+    display: flex;
     background-color: #F3F5F6;
     border-radius: 5px;
-    padding:15px;
- margin-left: 2px;
-    width:385px;
+    padding: 15px;
 
-    display: flex;
+    width: 370px;
+
     align-items: center;
     border: none;
+
     box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
 }
-.inputwrapshort:focus-within{
+
+.inputwrapshort:focus-within {
     box-shadow: 0 0 0 1.5px #034AB5;
 }
+
 input {
-    
+
     padding-left: 10px;
-    width:100%;
+    width: 100%;
     height: 20px;
     font-size: 19px;
     background-color: #F3F5F6;
-    border:none;
-    outline:none;
-  
-    
+    border: none;
+    outline: none;
+
+
 }
+
 input::placeholder {
     color: #034AB5;
     font-family: 'NotoSans-Regular';
 }
-.border1{
+
+.border1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    /* 간격 일정하게 유지 */
+    gap: 15px;
+    /* 입력 필드 사이의 고정된 간격 설정 */
+}
 
-  
-}
-.imgbtn img{
-    
-    width: 70px;
-    height: 70px;
-    margin-left: 5px;
-   
-  
-}
-.imgbtn{
-    display: flex; /* 추가된 부분 */
-    align-items: center; 
+
+.imgbtn {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    
-    margin-left: 6px;
+    margin-left: 2px;
+
 }
+
 /* 버튼 */
-.completeBtn{
+.completeBtn {
     margin-top: 45px;
     width: 480px;
     background-color: #034AB5;
-  
-    height:78px;
-    color:white;
+
+    height: 78px;
+    color: white;
     border-radius: 5px;
-    border:none;
-    font-size:25px;
+    border: none;
+    font-size: 25px;
     font-family: 'NotoSans-Bold';
     cursor: pointer;
 }
-.completeBtn:disabled{
+
+.completeBtn:disabled {
     background-color: #dadada;
-    color:white;
+    color: white;
 }

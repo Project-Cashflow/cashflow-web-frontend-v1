@@ -1,5 +1,5 @@
 .container {
-    
+
     top: 0;
     bottom: 0;
     width: 100%;
@@ -7,7 +7,7 @@
 
     left: 50%;
     transform: translate(-50%, 0);
-    
+
 
     display: flex;
     position: relative;
@@ -34,78 +34,90 @@
 }
 
 .wrongData {
-    position: absolute; /* 절대 위치 설정 */
-    margin-top:-5px;
-    margin-left:50px;
-    transform: translateX(-50%); /* 수평 정렬 */
+    position: absolute;
+    /* 절대 위치 설정 */
+    margin-top: -5px;
+    margin-left: 50px;
+    transform: translateX(-50%);
+    /* 수평 정렬 */
     color: #C24A4A;
     font-family: "NotoSans-Regular";
-  }
+}
+
 .contentWrap {
     margin-top: 80px;
-   
+
     font-family: 'NotoSans-Regular';
     display: flex;
     flex-direction: column;
-    align-items: center; /* 가로 가운데 정렬 */
-    text-align: center; /* 텍스트를 수직 가운데 정렬 */
+    align-items: center;
+    /* 가로 가운데 정렬 */
+    text-align: center;
+    /* 텍스트를 수직 가운데 정렬 */
 }
 
 .loginStay {
     margin-top: 18px;
-    display: flex; /* 수직 정렬을 위해 flexbox 사용 */
+    display: flex;
+    /* 수직 정렬을 위해 flexbox 사용 */
     cursor: pointer;
     font-family: 'NotoSans-Regular';
 }
 
 .loginStay img {
-    width: 17px; /* 가로 크기 20px */
-    height: 17px; /* 세로 크기 20px */
-    margin-right: 5px; /* 이미지와 텍스트 사이 간격 조절 */
+    width: 17px;
+    /* 가로 크기 20px */
+    height: 17px;
+    /* 세로 크기 20px */
+    margin-right: 5px;
+    /* 이미지와 텍스트 사이 간격 조절 */
     margin-top: 3px;
 }
 
 .loginStay span {
     font-size: 18px;
     color: #4575BC;
-    
-    
+
+
 }
 
-.wrongData{
-    color:#C24A4A;
+.wrongData {
+    color: #C24A4A;
     font-family: 'NotoSans-Regular';
 }
-.inputWrap{
-    display:flex;
+
+.inputWrap {
+    display: flex;
     background-color: #F3F5F6;
     border-radius: 5px;
-    padding:18px;
+    padding: 18px;
 
-    width:424px;
-    margin-top:18px;
+    width: 424px;
+    margin-top: 18px;
 
     border: none;
     box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
 
-   
+
 }
-.inputWrap:focus-within{
+
+.inputWrap:focus-within {
     box-shadow: 0 0 0 1.5px #034AB5;
 }
 
 input {
-    
+
     padding-left: 10px;
-    width:100%;
+    width: 100%;
     height: 20px;
     font-size: 19px;
     background-color: #F3F5F6;
-    border:none;
-    outline:none;
-  
-    
+    border: none;
+    outline: none;
+
+
 }
+
 input::placeholder {
     color: #034AB5;
     font-family: 'NotoSans-Regular';
@@ -114,26 +126,27 @@ input::placeholder {
 .loginBtn {
     width: 460px;
     background-color: #034AB5;
-    margin-top:42px;
-    height:78px;
-    color:white;
+    margin-top: 42px;
+    height: 78px;
+    color: white;
     border-radius: 5px;
-    border:none;
-    font-size:25px;
+    border: none;
+    font-size: 25px;
     font-family: 'NotoSans-Bold';
 
 }
-.loginBtn:disabled{
+
+.loginBtn:disabled {
     background-color: #dadada;
-    color:white;
+    color: white;
 }
 
-.login-help{
-    margin-top:42px;
-    color:#4575BC;
+.login-help {
+    margin-top: 42px;
+    color: #4575BC;
 }
 
-.login-help a{
+.login-help a {
     text-decoration: none;
     color: #034AB5;
     font-family: 'NotoSans-Regular';
